@@ -1,0 +1,43 @@
+---
+title: "ESM1 Study Results"
+callout-appearance: minimal
+---
+
+This is a website that contains the results of the following preregistration: <https://osf.io/d5jp2>, as well as associated exploratory analyses.
+
+**Title: "From motive dispositions to states to outcomes: An intensive experience sampling study on motivational dynamics in couples -- Study 1"**
+
+It contains the following research goals:
+
+**Research goal 1**: Replication of associations between implicit motives and relationship outcomes
+
+`partly published 🔶` (Zygar et al., 2018)
+
+**Research goal 2**: Replication of associations between implicit agency motives and mean levels of agentic motivational states, extended to communion motives
+
+`not published ❌`
+
+**Research goal 3**: Examination of the interaction between implicit motives and situations in predicting motivational states
+
+`not published ❌`
+
+**Research goal 4**: Examination of motivational states predicting behaviour
+
+`not published ❌`
+
+**Research goal 5**: Conceptual replication of the interaction between agentic motivation and situations in predicting relationship outcomes, extended to communion motivation and extended to mood (valence) as outcome variable
+
+`partly published 🔶` (Zygar et al., 2018)
+
+**Research goal 6**: Examination of associations between relationship satisfaction measures (trait assessment before the ESM, mean state during the ESM and retrospective assessment after the ESM)
+
+`published completely ✔️` (Zygar et al., 2018; Zygar-Hoffmann et al., 2020)
+
+## Associated data
+
+The data of the study of this preregistration can be accessed as a scientific-use-file at <https://rdc-psychology.org/zygar_2018>
+
+## Related publications
+
+-   Zygar, C., Hagemeyer, B., Pusch, S., & Schönbrodt, F. D. (2018). From motive dispositions to states to outcomes: An intensive experience sampling study on communal motivational dynamics in couples. *European Journal of Personality*, 32, 306--324. https://doi.org/10.1002/per.2145
+-   Zygar-Hoffmann, C., & Schönbrodt, F. D. (2020). Recalling experiences: Looking at momentary, retrospective and global assessments of relationship satisfaction. *Collabra: Psychology*, 6 (1). https://doi.org/10.1525/collabra.278

@@ -1,0 +1,44 @@
+---
+title: "Summary"
+---
+
+```{r, echo=FALSE, include=FALSE}
+source("../general_analyses/analyses-hyp1.R")
+source("../general_analyses/analyses-hyp1-inkrementell.R")
+source("../general_analyses/analyses-hyp1-exp.R")
+```
+
+# Preregistered hypotheses
+
+Hypothesis 1a: Individuals' implicit agency motives (trait) are negatively related to individuals' relationship satisfaction (trait)
+
+... for various dependent variables:
+
+-   CSI: `confirmed ✔️`
+-   PRQ: `confirmed ✔️`
+-   NRQ: `confirmed ✔️`
+
+Hypothesis 1b: Individuals' implicit communion motives (trait) are positively related to individuals' relationship satisfaction (trait).
+
+... for various dependent variables:
+
+-   CSI: `confirmed ✔️`
+-   PRQ: `confirmed ✔️`
+-   NRQ: `confirmed ✔️`
+
+# Overview of results from multilevel models (including exploratory analyses)
+
+| DV         | Communion                                     | Agency                                          | AgencyPow                                       | AgencyInd                                      |
+|------------|-----------------------------------------------|-------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| CSI        | `r unname(round(effH1.csi.C.main[3],2))` \*\* | `r unname(round(effH1.csi.A.main[3],2))` \*\*\* | \-                                              | \-                                             |
+| PRQ        | `r unname(round(effH1.prq.C.main[3],2))` \*\* | `r unname(round(effH1.prq.A.main[3],2))` \*\*   | \-                                              | \-                                             |
+| NRQ        | `r unname(round(effH1.nrq.C.main[3],2))` \*\* | `r unname(round(effH1.nrq.A.main[3],2))` \*\*\* | \-                                              | `r unname(round(effH1.nrq.A.Ind.main[3],2))` † |
+| BZ3 mean   | \-                                            | \-                                              | \-                                              | \-                                             |
+| BZ4 r mean | `r unname(round(effH1.BZ4.C.main[3],2))` \*\* | `r unname(round(effH1.BZ4.A.main[3],2))` \*     | \-                                              | \-                                             |
+| BZ         | `r unname(round(effH1.BZ.C.main[3],2))` \*    | `r unname(round(effH1.BZ.A.main[3],2))` †       | \-                                              | \-                                             |
+| BZ3 retro  | \-                                            | \-                                              | `r unname(round(effH1.bz.fb.APsy.main[3],2))` † | \-                                             |
+
+# Noteworthy
+
+-   Incremental effects from pnAgency predicting the csi (but not prq, nrq) beyond the desire for being alone
+-   Incremental effects from pnCommunion predicting the csi and nrq (but not prq) beyond the desire for closeness

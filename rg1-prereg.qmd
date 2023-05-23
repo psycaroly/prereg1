@@ -1,0 +1,233 @@
+---
+title: "Preregistered hypotheses"
+---
+
+```{r, echo=FALSE, include=FALSE}
+source("../general_analyses/analyses-hyp1.R")
+```
+
+## Hypothesis 1a: Individuals' implicit agency motives (trait) are negatively related to individuals' relationship satisfaction (trait)
+
+### With partner effects (Actor-Partner-Interdependence Models)
+
+::: {.panel-tabset}
+
+#### CSI
+
+```{r, echo=FALSE}
+summary(H1.apim.A)
+```
+
+#### PRQ
+
+```{r, echo=FALSE}
+summary(H1.apim.A.prq)
+```
+
+#### NRQ
+
+```{r, echo=FALSE}
+summary(H1.apim.A.nrq)
+```
+
+:::
+
+### Without partner effects (Multilevel Models)
+
+::: {.panel-tabset}
+
+#### CSI
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.csi.A.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.csi.A.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.csi.A.main)
+resfit.H1.csi.A.main
+qqnorm(resid(H1.csi.A.main))
+qqline(resid(H1.csi.A.main))
+```
+
+:::
+
+#### PRQ
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.prq.A.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.prq.A.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.prq.A.main)
+resfit.H1.prq.A.main
+qqnorm(resid(H1.prq.A.main))
+qqline(resid(H1.prq.A.main))
+```
+
+:::
+
+#### NRQ
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.nrq.A.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.nrq.A.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.nrq.A.main)
+resfit.H1.nrq.A.main
+qqnorm(resid(H1.nrq.A.main))
+qqline(resid(H1.nrq.A.main))
+```
+
+:::
+
+:::
+
+## Hypothesis 1b: Individuals' implicit communion motives (trait) are positively related to individuals' relationship satisfaction (trait).
+
+### With partner effects (Actor-Partner-Interdependence Models)
+
+::: {.panel-tabset}
+
+#### CSI
+
+```{r, echo=FALSE}
+summary(H1.apim.C)
+```
+
+#### PRQ
+
+```{r, echo=FALSE}
+summary(H1.apim.C.prq)
+```
+
+#### NRQ
+
+```{r, echo=FALSE}
+summary(H1.apim.C.nrq)
+```
+
+:::
+
+### Without partner effects (Multilevel Models)
+
+::: {.panel-tabset}
+
+#### CSI
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.csi.C.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.csi.C.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.csi.C.main)
+resfit.H1.csi.C.main
+qqnorm(resid(H1.csi.C.main))
+qqline(resid(H1.csi.C.main))
+```
+
+:::
+
+#### PRQ
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.prq.C.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.prq.C.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.prq.C.main)
+resfit.H1.prq.C.main
+qqnorm(resid(H1.prq.C.main))
+qqline(resid(H1.prq.C.main))
+```
+
+:::
+
+#### NRQ
+
+::: {.panel-tabset}
+
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.nrq.C.main)
+```
+
+##### Scatter plot
+
+```{r, echo=FALSE}
+H1.nrq.C.main.plot
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.nrq.C.main)
+resfit.H1.nrq.C.main
+qqnorm(resid(H1.nrq.C.main))
+qqline(resid(H1.nrq.C.main))
+```
+
+:::
+
+:::

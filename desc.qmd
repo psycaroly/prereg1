@@ -1,0 +1,99 @@
+---
+title: "Descriptives"
+---
+
+```{r, echo=FALSE, include=FALSE}
+library(psych)
+load(file="../processed_data/preQ.pact.dat.RData")
+load(file="../processed_data/sliced.dat.wide.RData")
+load(file="../processed_data/postQ.dat.RData")
+```
+
+## Implicit Motives
+
+::: {.panel-tabset}
+
+### Implicit Agency motive
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$Agency, col = "darkblue", xlab = "Implicit Agency motive", main = "")
+describe(preQ.pact.dat$Agency)
+```
+
+### Implicit Power Agency motive
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$AgencyPow, col = "darkblue", xlab = "Implicit Power Agency motive", main = "")
+describe(preQ.pact.dat$AgencyPow)
+```
+
+### Implicit Independence Agency motive
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$AgencyInd, col = "darkblue", xlab = "Implicit Independence Agency motive", main = "")
+describe(preQ.pact.dat$AgencyInd)
+```
+
+### Implicit Communion motive
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$Communion, col = "darkblue", xlab = "Implicit Communion motive", main = "")
+describe(preQ.pact.dat$Communion)
+```
+
+:::
+
+## Relationship satisfaction (RS)
+
+::: {.panel-tabset}
+
+### Couple Satisfaction index
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$csi, col = "darkblue", xlab = "Couple Satisfaction index", main = "")
+describe(preQ.pact.dat$csi)
+```
+
+### Positive relationship quality
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$prq, col = "darkblue", xlab = "Positive relationship quality", main = "")
+describe(preQ.pact.dat$prq)
+```
+
+### Negative relationship quality
+
+```{r, echo=FALSE}
+hist(preQ.pact.dat$nrq, col = "darkblue", xlab = "Negative relationship quality", main = "")
+describe(preQ.pact.dat$nrq)
+```
+
+### BZ3 mean (ESM RS mood item)
+
+```{r, echo=FALSE}
+hist(sliced.dat.wide$BZ3.mean, col = "darkblue", xlab = "BZ3 mean", main = "")
+describe(sliced.dat.wide$BZ3.mean)
+```
+
+### BZ4 mean (reversed) (ESM RS annoyance item)
+
+```{r, echo=FALSE}
+hist(sliced.dat.wide$BZ4.r.mean, col = "darkblue", xlab = "BZ4 mean (reversed)", main = "")
+describe(sliced.dat.wide$BZ4.r.mean)
+```
+
+### BZ mean (ESM RS scale)
+
+```{r, echo=FALSE}
+hist(sliced.dat.wide$BZ.mean, col = "darkblue", xlab = "BZ mean", main = "")
+describe(sliced.dat.wide$BZ.mean)
+```
+
+### Retrospective relationship satisfaction (postQ)
+
+```{r, echo=FALSE}
+hist(postQ.dat$bz.fb, col = "darkblue", xlab = "Retro BZ", main = "")
+describe(postQ.dat$bz.fb)
+```
+
+:::

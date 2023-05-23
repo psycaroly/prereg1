@@ -1,0 +1,584 @@
+---
+title: "Exploration"
+---
+
+```{r, echo=FALSE, include=FALSE}
+source("../general_analyses/analyses-hyp1.R")
+source("../general_analyses/analyses-hyp1-exp.R")
+source("../general_analyses/analyses-hyp1-inkrementell.R")
+source("../general_analyses/analyses-hyp1-apim-z.R")
+```
+
+## Model with Agency and Communion
+
+::: panel-tabset
+### CSI
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.csi.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.csi.main)
+resfit.H1.csi.main
+qqnorm(resid(H1.csi.main))
+qqline(resid(H1.csi.main))
+```
+:::
+
+### PRQ
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.prq.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.prq.main)
+resfit.H1.prq.main
+qqnorm(resid(H1.prq.main))
+qqline(resid(H1.prq.main))
+```
+:::
+
+### NRQ
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.nrq.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.nrq.main)
+resfit.H1.nrq.main
+qqnorm(resid(H1.nrq.main))
+qqline(resid(H1.nrq.main))
+```
+:::
+:::
+
+## Agency: Incremental effects of explicit and implicit motives
+
+::: {.panel-tabset}
+
+### CSI
+
+```{r, echo=FALSE}
+summary(H1.csi.A.ink)
+```
+
+### PRQ
+
+```{r, echo=FALSE}
+summary(H1.prq.A.ink)
+```
+
+### NRQ
+
+```{r, echo=FALSE}
+summary(H1.nrq.A.ink)
+```
+
+### Correlation explicit and implicit motives
+
+```{r, echo=FALSE}
+summary(corr.A.ex.imp)
+```
+
+::: 
+
+## Communion: Incremental effects of explicit and implicit motives
+
+::: panel-tabset
+
+### CSI
+
+```{r, echo=FALSE}
+summary(H1.csi.C.ink)
+```
+
+### PRQ
+
+```{r, echo=FALSE}
+summary(H1.prq.C.ink)
+```
+
+### NRQ
+
+```{r, echo=FALSE}
+summary(H1.nrq.C.ink)
+```
+
+### Correlation explicit and implicit motives
+
+```{r, echo=FALSE}
+summary(corr.C.ex.imp)
+```
+
+:::
+
+## Are individuals' implicit communion motives (trait) positively related to individuals' ...
+
+::: panel-tabset
+### ...mean BZ3 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ3.C.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ3.C.main)
+resfit.H1.BZ3.C.main
+qqnorm(resid(H1.BZ3.C.main))
+qqline(resid(H1.BZ3.C.main))
+```
+:::
+
+### ...mean BZ4 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ4.C.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ4.C.main)
+resfit.H1.BZ4.C.main
+qqnorm(resid(H1.BZ4.C.main))
+qqline(resid(H1.BZ4.C.main))
+```
+:::
+
+### ...mean BZ state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ.C.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ.C.main)
+resfit.H1.BZ.C.main
+qqnorm(resid(H1.BZ.C.main))
+qqline(resid(H1.BZ.C.main))
+```
+:::
+
+### ...retrospective assessment of BZ3?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.bz.fb.C.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.bz.fb.C.main)
+resfit.H1.bz.fb.C.main
+qqnorm(resid(H1.bz.fb.C.main))
+qqline(resid(H1.bz.fb.C.main))
+```
+:::
+:::
+
+## Are individuals' implicit agency motives (trait) negatively related to individuals' ...
+
+::: panel-tabset
+### ...mean BZ3 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ3.A.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ3.A.main)
+resfit.H1.BZ3.A.main
+qqnorm(resid(H1.BZ3.A.main))
+qqline(resid(H1.BZ3.A.main))
+```
+:::
+
+### ...mean BZ4 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ4.A.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ4.A.main)
+resfit.H1.BZ4.A.main
+qqnorm(resid(H1.BZ4.A.main))
+qqline(resid(H1.BZ4.A.main))
+```
+:::
+
+### ...mean BZ state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ.A.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ.A.main)
+resfit.H1.BZ.A.main
+qqnorm(resid(H1.BZ.A.main))
+qqline(resid(H1.BZ.A.main))
+```
+:::
+
+### ...retrospective assessment of BZ3?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.bz.fb.A.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.bz.fb.A.main)
+resfit.H1.bz.fb.A.main
+qqnorm(resid(H1.bz.fb.A.main))
+qqline(resid(H1.bz.fb.A.main))
+```
+:::
+:::
+
+## Are individuals' implicit agency power motives (trait) negatively related to individuals' ...
+
+::: panel-tabset
+### ...CSI?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.csi.A.Pow.main)
+```
+:::
+
+### ...PRQ?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.prq.A.Pow.main)
+```
+:::
+
+### ...NRQ
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.nrq.A.Pow.main)
+```
+:::
+
+### ...mean BZ3 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ3.APsy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ3.APsy.main)
+resfit.H1.BZ3.APsy.main
+qqnorm(resid(H1.BZ3.APsy.main))
+qqline(resid(H1.BZ3.APsy.main))
+```
+:::
+
+### ...mean BZ4 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ4.APsy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ4.APsy.main)
+resfit.H1.BZ4.APsy.main
+qqnorm(resid(H1.BZ4.APsy.main))
+qqline(resid(H1.BZ4.APsy.main))
+```
+:::
+
+### ...mean BZ state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ.APsy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ.APsy.main)
+resfit.H1.BZ.APsy.main
+qqnorm(resid(H1.BZ.APsy.main))
+qqline(resid(H1.BZ.APsy.main))
+```
+:::
+
+### ...retrospective assessment of BZ3?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.bz.fb.APsy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.bz.fb.APsy.main)
+resfit.H1.bz.fb.APsy.main
+qqnorm(resid(H1.bz.fb.APsy.main))
+qqline(resid(H1.bz.fb.APsy.main))
+```
+:::
+:::
+
+## Are individuals' implicit agency independence motives (trait) negatively related to individuals' ...
+
+::: panel-tabset
+### ...CSI?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.csi.A.Ind.main)
+```
+:::
+
+### ...PRQ?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.prq.A.Ind.main)
+```
+:::
+
+### ...NRQ?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.nrq.A.Ind.main)
+```
+:::
+
+### ...mean BZ3 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ3.APhy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ3.APhy.main)
+resfit.H1.BZ3.APhy.main
+qqnorm(resid(H1.BZ3.APhy.main))
+qqline(resid(H1.BZ3.APhy.main))
+```
+:::
+
+### ...mean BZ4 state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ4.APhy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ4.APhy.main)
+resfit.H1.BZ4.APhy.main
+qqnorm(resid(H1.BZ4.APhy.main))
+qqline(resid(H1.BZ4.APhy.main))
+```
+:::
+
+### ...mean BZ state?
+
+::: panel-tabset
+#### Main model
+
+```{r, echo=FALSE}
+summary(H1.BZ.APhy.main)
+```
+
+#### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.BZ.APhy.main)
+resfit.H1.BZ.APhy.main
+qqnorm(resid(H1.BZ.APhy.main))
+qqline(resid(H1.BZ.APhy.main))
+```
+:::
+
+### ...retrospective assessment of BZ3?
+
+::: panel-tabset
+##### Main model
+
+```{r, echo=FALSE}
+summary(H1.bz.fb.APhy.main)
+```
+
+##### icc, residual and qqplot for main model
+
+```{r, echo=FALSE}
+performance::icc(H1.bz.fb.APhy.main)
+resfit.H1.bz.fb.APhy.main
+qqnorm(resid(H1.bz.fb.APhy.main))
+qqline(resid(H1.bz.fb.APhy.main))
+```
+:::
+:::
+
+## Communion APIMs
+
+::: panel-tabset
+### Simple apims (actor and partner effects without interactions)
+
+::: panel-tabset
+#### Main model (constrained, see also preregistered tab)
+
+```{r, echo=FALSE}
+summary(H1.apim.C)
+```
+
+#### Unconstrained model
+
+```{r, echo=FALSE}
+summary(H1.apim.C.uc)
+```
+:::
+
+### complex apims (actor and partner effects with interactions)
+
+::: panel-tabset
+#### Main model (constrained)
+
+```{r, echo=FALSE}
+summary(H1.apim.C.int)
+```
+
+#### Unconstrained model
+
+```{r, echo=FALSE}
+summary(H1.apim.C.uc.int)
+```
+:::
+:::
+
+## Agency APIMs
+
+::: panel-tabset
+### Simple apims (actor and partner effects without interactions)
+
+::: panel-tabset
+#### Main model (constrained, see also preregistered tab)
+
+```{r, echo=FALSE}
+summary(H1.apim.A)
+```
+
+#### Unconstrained model
+
+```{r, echo=FALSE}
+summary(H1.apim.A.uc)
+```
+:::
+
+### complex apims (actor and partner effects with interactions)
+
+::: panel-tabset
+#### Main model (constrained)
+
+```{r, echo=FALSE}
+summary(H1.apim.A.int)
+plotRSA(b0 = 0.10, x = -0.247, y = -0.046, xy = -0.292, points = list(value = "predicted", data = dat.hypAPIM.wide[,c("IMot.A.z_m", "IMot.A.z_f", "csi.z_m")]), xlab = "actor's agency", ylab = "partner's agency", zlab = "actor's relationship satisfaction")
+```
+
+#### Unconstrained model
+
+```{r, echo=FALSE}
+summary(H1.apim.A.uc.int)
+```
+:::
+:::

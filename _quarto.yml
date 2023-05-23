@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "ESM1 preregistration website"
+  navbar:
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Descriptives"
+        file: desc.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Research goal 1"
+        contents:
+          - rg1-summary.qmd
+          - rg1-prereg.qmd
+          - rg1-exp.qmd
+  
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+
